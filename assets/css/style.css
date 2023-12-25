@@ -6,6 +6,7 @@
   --font-heading: "Sen", sans-serif;
   --primary-color: #ffb900;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -15,10 +16,21 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
 /* ======common======= */
 a {
   text-decoration: none;
 }
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -38,9 +50,11 @@ a {
   border-radius: 999px;
   background: #171100;
 }
+
 .btn:hover {
   opacity: 0.9;
 }
+
 /* =============header======== */
 .header {
   background: #fffcf4;
@@ -51,6 +65,7 @@ a {
   position: sticky;
   top: -28px;
 }
+
 .header .body {
   display: flex;
   align-items: center;
@@ -60,6 +75,7 @@ a {
 .nav {
   margin-left: auto;
 }
+
 .nav ul {
   display: flex;
 }
@@ -88,9 +104,11 @@ a {
   border-radius: 1px;
   background: #171100;
 }
+
 .header .action {
   margin-left: 49px;
 }
+
 /* =======hero========= */
 .hero {
   padding: 56px 0 65px;
@@ -117,6 +135,7 @@ a {
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
   width: 270px;
 }
+
 .hero-sumary .item + .item {
   /*tác động vào item thứ 2 trong class hero-sumart*/
   margin-top: 22px;
@@ -136,6 +155,7 @@ a {
   align-items: center;
   background-color: #fff9e8;
 }
+
 .hero-sumary .icon2 {
   background-color: #fcefff;
 }
@@ -143,6 +163,7 @@ a {
 .hero-sumary .icon3 {
   background-color: #ebeaff;
 }
+
 .hero-sumary .info {
   margin-left: 16px;
 }
@@ -158,6 +179,7 @@ a {
   font-size: 1.8rem;
   line-height: 1.67;
 }
+
 /* =====hero right====== */
 .hero .content-block {
   width: 52%;
@@ -212,6 +234,7 @@ a {
   background: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
 }
+
 .hero .watch-video span {
   margin-left: 14px;
   color: #171100;
@@ -224,9 +247,10 @@ a {
   margin-top: 48px;
 }
 
-.hero .stats{
+.hero .stats {
   margin-top: 8px;
 }
+
 .hero .stats strong {
   margin-right: 15px;
   color: #171100;
@@ -236,6 +260,51 @@ a {
   line-height: 1.23; /* 122.727% */
 }
 
-.hero .stats strong:nth-child(2){ /*sử dụng nth-child() để tác động lên thẻ strong thứ 2*/  
+.hero .stats strong:nth-child(2) {
+  /*sử dụng nth-child() để tác động lên thẻ strong thứ 2*/
   margin-left: 28px;
+}
+
+/* ======popular======== */
+.popular {
+  padding: 65px 0;
+  margin-top: 165px;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.popular-top .controls{
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .controls-btn:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
